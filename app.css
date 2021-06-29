@@ -1,0 +1,150 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+
+body{
+   background-color: #000d1a;
+   display: flex;
+   justify-self: center;
+   align-items: center;
+   min-height: 100vh;
+}
+
+.stats{
+  align-items: center;
+  background-color: #1f1f2e;
+  /* border-bottom: 1px solid red; */
+  border-radius: 10px;
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+
+.stats img{
+  max-width: 100%;
+  border-radius:10px 10px 0px 0px;
+}
+
+/* .stats img{
+  background-color: blue;
+  opacity: 30%;
+} */
+
+.statsheader{
+  color: #fff;
+  font-size: 24px;
+  font-weight:800;
+  padding: 20px 40px;
+  letter-spacing: 2px;
+}
+
+.statsheader span{
+   color: #9b929b;
+}
+
+
+.pagecontents{
+  color: #bdbde0;
+  padding: 20px 30px;
+}
+
+.ratevalue{
+  color:#bdbde0;
+  font-size: 12px;
+  padding: 20px 0px;
+  line-height: 20px;
+}
+
+
+.ratevalue span{
+  color:#fff ;
+  font-size: 27px;
+}
+
+
+@media(min-width:900px){
+  .stats{
+    text-align:unset;
+    max-width: 1000px;
+    flex-direction:row-reverse;
+  }
+  
+  .stats img{
+    border-radius:0px 10px 10px 0px;
+  }
+
+  .statsheader{
+    font-weight: 900;
+    position: relative;
+    top: 30px;
+    margin: 0 30px 0 30px;
+    padding: 0 70px 0 30px;
+  }
+
+  .pagecontents{
+    position: relative;
+    top: 110px;
+    line-height: 17px;
+    padding: 5px 60px;
+  }
+
+  .rate{
+    display: flex;
+    justify-content: center;
+    margin-top: 160px;
+  }
+
+  .ratevalue{
+    font-size: 13px;
+    margin: 0px 30px;
+  }
+}
